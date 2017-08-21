@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru"><head>
-  <meta charset="utf-8">
-  <meta name="format-detection" content="telephone=no">
-  <title>gllacy</title>
-</head>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <title>Gllacy Shop</title>
+  </head>
   <body>
     <input class="slider-input" type="radio" id="btn-1" name="toggle" checked="">
     <input class="slider-input" type="radio" id="btn-2" name="toggle">
@@ -15,7 +16,7 @@
             <img src="img/logo.svg" width="154" height="64" alt="«Gllacy Shop»">
           </a>
           <ul class="site-navigation">
-            <li class=>
+            <li>
               <a href="catalog.html">Каталог</a>
               <ul class="catalog-navigation">
                 <li class="catalog-navigation-item  catalog-navigation-new">
@@ -39,14 +40,14 @@
               <a href="#">Доставка и оплата</a>
             </li>
             <li>
-              <a href="#info">О Компании</a>
+              <a href="#">О Компании</a>
             </li>
           </ul>
           <ul class="user-block">
             <li class="user-block-item">
-              <a class="user-block-btn  user-block__btn--search" href="#"></a>
+              <a class="user-block-btn  user-block-search" href="#"></a>
               <form class="search" action="#" method="post">
-                <fieldset class="search__input  custom-input">
+                <fieldset class="search-input  custom-input">
                   <input class="custom-input-field" id="search-field" type="text" name="search">
                   <label class="custom-input-placeholder" for="search-field">Что ищем?</label>
                 </fieldset>
@@ -73,18 +74,18 @@
               </form>
             </li>
             <li class="user-block-item">
-              <button class="user-block-btn  user-block-cart">Пусто</button>
+              <a class="user-block-btn  user-block-cart">Пусто</a>
             </li>
           </ul>
         </nav>
-
-        <p class="page-header-contacts">
-          С 10 до 20, ежедневно
-          <b class="page-header-phone">8 812 450-25-25</b>
-        </p>
+        <div class="contact">
+          <p>c 10 до 20, ежедневно</p>
+          <a href="tel:88124502525">8 812 450-25-25</a>
+        </div>
       </header>
       <main class="page-content">
         <section class="slider">
+          <h2 class="visually-hidden">Промо-предложения</h2>
           <div class="slider-controls">
             <label class="slider-controller" for="btn-1"></label>
             <label class="slider-controller" for="btn-2"></label>
@@ -129,7 +130,8 @@
             <li class="catalog-list-item  catalog-list-hit">
               <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
               <p class="catalog-image-wrapper">
-                <img src="img/ice-cream-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                <img src="img/ice-cream-1.jpg" width="267" height="267"
+                     alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                 <b class="catalog-item-price">310 ₽<sub>/кг</sub></b>
               </p>
               <div class="catalog-action-wrapper">
@@ -148,8 +150,9 @@
             </li>
             <li class="catalog-list-item  catalog-list-hit">
               <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
-              <p class="catalog-list__image-wrapper">
-                <img src="img/ice-cream-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              <p class="catalog-image-wrapper">
+                <img src="img/ice-cream-3.jpg" width="267" height="267"
+                     alt="Сливочно-клубничное с присыпкой из белого шоколада">
                 <b class="catalog-item-price">355 ₽<sub>/кг</sub></b>
               </p>
               <div class="catalog-action-wrapper">
@@ -159,7 +162,8 @@
             <li class="catalog-list-item catalog-list-hit">
               <h3>Сливочное крем-брюле с карамельной подливкой</h3>
               <p class="catalog-list-wrapper">
-                <img src="img/ice-cream-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+                <img src="img/ice-cream-4.jpg" width="267" height="267"
+                     alt="Сливочное крем-брюле с карамельной подливкой">
                 <b class="catalog-item-price">310 ₽<sub>/кг</sub></b>
               </p>
               <div class="catalog-action-wrapper">
@@ -173,14 +177,20 @@
           <h2 class="features-title" id="info">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого
             собственного производства на развес</h2>
           <ul class="features-list">
-            <li class="features-item  features-item-cow">Закупка ингредиентов  производится только у проверенных
-              фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-            <li class="features-item  features-item-leaf">Для приготовления мороженого используются настоящие
-              сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-            <li class="features-item  features-item-thermometer">Доставка нашего мороженого до заказчиков
-              осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
             <li class="features-item  features-item-icecream">Все наше мороженое изготавливается на собственном
-              производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+              производстве, с использованием современного оборудования и проверенных временем технологий.
+            </li>
+            <li class="features-item  features-item-cow">Закупка ингредиентов производится только у проверенных
+              фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+            </li>
+            <li class="features-item  features-item-leaf">Для приготовления мороженого используются настоящие
+              сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из
+              натурального, экологически чистого сырья.
+            </li>
+            <li class="features-item  features-item-thermometer">Доставка нашего мороженого до заказчиков
+              осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить
+              превосходный вкус.
+            </li>
           </ul>
         </section>
 
@@ -218,7 +228,8 @@
                 <b>8 812 450-25-25</b>
                 (с 10 до 20 ежедневно)
                 <a class="btn  contacts-btn" href="feedback.html">Форма обратной связи</a>
-              </p></div>
+              </p>
+            </div>
           </div>
         </section>
       </main>
@@ -274,7 +285,7 @@
         </fieldset>
         <fieldset class="feedback-form-text  custom-input">
           <textarea class="custom-input-field form-text-area" name="text" required=""></textarea>
-          <label class="custom-input-placeholder">Напишите что-нибудь...  </label>
+          <label class="custom-input-placeholder">Напишите что-нибудь... </label>
         </fieldset>
         <button class="btn feedback-form-submit" type="submit">Отправить</button>
       </form>
@@ -283,4 +294,5 @@
     <div class="modal-overlay"></div>
 
 
-  </body></html>
+  </body>
+</html>
