@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+.btn {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  vertical-align: middle;
+  color: #fefefe;
+
+  text-decoration: none;
+  background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+}
+
+.btn:hover {
+  background-image: linear-gradient(to top, #ec6e5d 0%, #f58669 100%);
+  box-shadow: 0 2px 2px #ac1000;
+}
+
+.btn:active {
+  background-image: linear-gradient(to top, #e1613e 0%, #d74531 100%);
+  box-shadow: inset 0 2px 2px #942718;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration-color: rgba(255,255,255,0.4);
+}
+
+.site-navigation a:hover {
+  color: #323232;
+
+  background-color: #f7f6f3;
+}
+
+.site-navigation a:active {
+  background-color: #ededed;
+  box-shadow: inset 0 2px 1px dimgrey;
+}
+
+.catalog-navigation {
+  color: #323232;
+
+  background-color: #f8f7f4;
+  list-style: none;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.catalog-navigation-item a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight:  400;
+  text-decoration: none;
+  color: #323232;
+}
+
+.catalog-navigation-item a:hover {
+  background-color: #fbded7;
+}
+
+.catalog-navigation-item a:active {
+  background-color: #f6b5a5;
+}
+
+.user-block {
+  list-style: none;
+}
+
+.user-block-item .user-block-btn {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #ffffff;
+
+  background-color: rgba(255,255,255,0.2);
+}
+
+.user-block-item .user-block-btn:hover {
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+.user-block-item form {
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.user-block-item fieldset {
+  border: none;
+}
+
+.user-block-item label {
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+}
+
+.authorization-form-links .authorization-form-restore,
+.authorization-form-links .authorization-form-register {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #323232;
+}
+
+.authorization-form-links .authorization-form-restore:hover,
+.authorization-form-links .authorization-form-register:hover,
+.authorization-form-links .authorization-form-restore:active,
+.authorization-form-links .authorization-form-register:active {
+  color: #e84d37;
+}
+
+.contact p {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.contact a {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+
+  text-decoration: none;
+}
+
+.slider-content {
+  list-style: none;
+}
+
+.special-list {
+  list-style: none;
+}
+
+.slider-item .slider-item-title {
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.slider-item .slider-item-btn {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.special-item:first-child {
+  background-image: url("../img/raspberry.jpg");
+}
+
+.special-item:last-child {
+  background-image: url("../img/chocolate.jpg");
+}
+
+.special-item .special-item-slogan {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.special-item .special-item-info {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.catalog-image-wrapper img {
+  border-radius: 50%;
+}
+
+.catalog-image-wrapper .catalog-item-price {
+  font-size: 45px;
+  line-height: 45px;
+}
