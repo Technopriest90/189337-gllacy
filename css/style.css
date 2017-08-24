@@ -11,6 +11,8 @@ body {
   background-color: #849d8f;
 }
 
+/*Базовые стили*/
+
 .btn {
   font-size: 18px;
   line-height: 24px;
@@ -48,6 +50,8 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/*Разметка шапки*/
 
 .site-navigation {
   list-style: none;
@@ -143,6 +147,25 @@ body {
 .authorization-form-links .authorization-form-restore:active,
 .authorization-form-links .authorization-form-register:active {
   color: #e84d37;
+  text-decoration-color: #e84d37;
+}
+
+
+/*Разметка корзины*/
+
+.user-block-item .card {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #323232;
+
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card p:last-of-type {
+  color: #999;
 }
 
 .contact p {
@@ -158,6 +181,60 @@ body {
 
   text-decoration: none;
 }
+
+.main-navigation-item a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+/*Разметка хлебных крошек*/
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #ffffff;
+
+  text-decoration-color: rgba(255,255,255,0.2);
+}
+
+.breadcrumbs a:active,
+.breadcrumbs a:hover {
+  color: #ffbc9e;
+  text-decoration-color: #ffbc9e;
+}
+
+.breadcrumbs .breadcrumbs-item-current {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+/*Разметка формы*/
+
+.page-content-title {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.filters-form .filters-form-item {
+  border: none;
+}
+
+.filters-form .filters-form-description {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+/*Разметка слайдера*/
 
 .slider-content {
   list-style: none;
@@ -177,6 +254,8 @@ body {
   line-height: 44px;
 }
 
+/*Разметка Специальных предложений*/
+
 .special-item:first-child {
   background-image: url("../img/raspberry.jpg");
 }
@@ -195,6 +274,17 @@ body {
   line-height: 22px;
 }
 
+/*Разметка каталога*/
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-list-item:hover {
+  background-color: rgba(248, 247, 244, 0.2);
+  border-radius: 5px;
+}
+
 .catalog-image-wrapper img {
   border-radius: 50%;
 }
@@ -202,4 +292,199 @@ body {
 .catalog-image-wrapper .catalog-item-price {
   font-size: 45px;
   line-height: 45px;
+}
+
+/*Разметка блока возможностей*/
+
+.features {
+  color: #323232;
+
+  background-color: #dfd3b9;
+  background-image: url("../img/waffle.jpg");
+}
+
+.features .features-title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.features .features-item {
+  font-weight: 400;
+  line-height: 22px;
+
+  list-style: none;
+}
+
+/*Разметка выноски из блога*/
+
+.blog-news {
+  color: #323232;
+
+  background-color: #f4f6f5;
+  background-image: url("../img/strawberry-bg.jpg");
+  background-repeat: no-repeat;
+}
+
+.blog-news h2 {
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.blog-news a {
+  color: #323232;
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.blog-news a:hover,
+.blog-news a:active {
+  color: #e84d37;
+  text-decoration-color: #e84d37;
+}
+
+/*Разметка подписки на рассылку*/
+
+.newsletter {
+  color: #5a5a5a;
+
+  background-color: #f8f7f4;
+
+  border-radius: 10px;
+  background-image: url("../img/post-bg.png");
+  background-size: cover;
+}
+
+.newsletter .newsletter-form {
+  background: #f8f7f4;
+}
+
+.newsletter-form .newsletter-info {
+  font-weight: 400;
+}
+
+.newsletter-form .newsletter-input {
+  border: none;
+}
+
+.newsletter-input .custom-input-placeholder {
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/*Разметка карты*/
+
+.map {
+  background-image: url("../img/map-bg.png");
+  background-repeat: no-repeat;
+}
+
+.map-container .contacts {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #323232;
+
+  background-color: rgba(255, 255, 255, 0.98);
+  border-radius: 15px;
+}
+
+.contacts b {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/*Разметка пагинатора*/
+
+.pagination-list a{
+  font-weight: 500;
+  line-height: 18px;
+  color: #ffffff;
+
+  text-decoration: none;
+}
+
+.pagination-item-current a {
+  color: #323232;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+/*Разметка футера*/
+
+.footer-social {
+  list-style: none;
+}
+
+.footer-social .footer-social-btn {
+  font-size: 0;
+
+  background-color: rgba(255,255,255,0.8);
+  border: 3px solid rgba(255,255,255,0.5);
+}
+
+.footer-menu ul {
+  list-style: none;
+}
+
+.footer-menu-item a{
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+
+  text-decoration-color: rgba(255,255,255,0.2);
+}
+
+.menu-item-heart a{
+  font-weight: 700;
+}
+
+.footer-menu-item a:active,
+.footer-menu-item a:hover {
+  color: #e84d37;
+  text-decoration-color: #e84d37;
+}
+
+.copyright {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.copyright a {
+  color: #fefefe;
+}
+
+.copyright a:active,
+.copyright a:hover {
+  color: #e84d37;
+  text-decoration-color: #e84d37;
+}
+
+/*Разметка модального окна*/
+
+.modal-feedback {
+  background-color: #f8f7f4;
+}
+
+.modal-feedback h2 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #323232;
+}
+
+.modal-feedback fieldset {
+  border: none;
+}
+
+.modal-feedback .custom-input-placeholder {
+  font-weight: 400;
+  line-height: 24px;
+  color: #999;
 }
