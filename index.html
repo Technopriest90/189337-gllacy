@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no">
-    <title>Gllacy Shop</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900,900i&amp;subset=cyrillic" rel="stylesheet">
+    <title>HTML Academy: Глейси</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -14,6 +13,7 @@
     <input class="slider-input" type="radio" id="btn-3" name="toggle">
     <div class="page-wrapper">
       <header class="page-header">
+        <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
         <nav class="main-navigation">
           <a class="main-navigation-logo">
             <img src="img/logo.svg" width="154" height="64" alt="«Gllacy Shop»">
@@ -23,32 +23,34 @@
               <a href="catalog.html">Каталог</a>
               <ul class="catalog-navigation">
                 <li class="catalog-navigation-item  catalog-navigation-new">
-                  <a href="#">Новинки</a>
+                  <a href="new.html">Новинки</a>
                 </li>
                 <li class="catalog-navigation-item">
-                  <a href="#">Сливочное</a>
+                  <a href="catalog.html">Сливочное</a>
                 </li>
                 <li class="catalog-navigation-item">
-                  <a href="#">Щербеты</a>
+                  <a href="sorbets.html">Щербеты</a>
                 </li>
                 <li class="catalog-navigation-item">
-                  <a href="#">Фруктовый лед</a>
+                  <a href="fruit.html">Фруктовый лед</a>
                 </li>
                 <li class="catalog-navigation-item">
-                  <a href="#">Мелорин</a>
+                  <a href="melorin.html">Мелорин</a>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="#">Доставка и оплата</a>
+              <a href="delivery.html">Доставка и оплата</a>
             </li>
             <li>
-              <a href="#">О Компании</a>
+              <a href="about.html">О Компании</a>
             </li>
           </ul>
           <ul class="user-block">
             <li class="user-block-item">
-              <a class="user-block-btn  user-block-search" href="#"></a>
+              <a class="user-block-btn  user-block-search" href="#">
+                <span class="visually-hidden">Поиск</span>
+              </a>
               <form class="search" action="#" method="post">
                 <fieldset class="search-input  custom-input">
                   <input class="custom-input-field" id="search-field" type="text" name="search">
@@ -60,23 +62,26 @@
               <a class="user-block-btn  user-block-login" href="#">Вход</a>
               <form class="authorization-form" action="https://echo.htmlacademy.ru" method="post">
                 <fieldset class="authorization-form-email  custom-input">
+                  <span class="visually-hidden">Введите вашу электронную почту:</span>
                   <input class="custom-input-field" id="login" type="email" name="login">
                   <label class="custom-input-placeholder" for="login">Электронная почта</label>
                 </fieldset>
                 <fieldset class="authorization-form-password  custom-input">
+                  <span class="visually-hidden">Введите ваш пароль:</span>
                   <input class="custom-input-field" id="password" type="password" name="password">
                   <label class="custom-input-placeholder" for="password">Пароль</label>
                 </fieldset>
                 <fieldset class="authorization-form-submit">
                   <button class="btn authorization-form-btn" type="submit">Войти</button>
                   <p class="authorization-form-links">
-                    <a class="authorization-form-restore" href="#">Забыли пароль?</a>
-                    <a class="authorization-form-register" href="#">Новая регистрация</a>
+                    <a class="authorization-form-restore" href="recovery.html">Забыли пароль?</a>
+                    <a class="authorization-form-register" href="sign-up.html">Новая регистрация</a>
                   </p>
                 </fieldset>
               </form>
             </li>
             <li class="user-block-item">
+              <span class="visually-hidden">Корзина</span>
               <a class="user-block-btn  user-block-cart">Пусто</a>
             </li>
           </ul>
@@ -88,7 +93,7 @@
       </header>
       <main class="page-content">
         <section class="slider">
-          <h2 class="visually-hidden">Промо-предложения</h2>
+          <h2 class="visually-hidden">Наши популярные товары</h2>
           <div class="slider-controls">
             <label class="slider-controller" for="btn-1"></label>
             <label class="slider-controller" for="btn-2"></label>
