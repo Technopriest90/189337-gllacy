@@ -148,14 +148,40 @@ img {
 
 /*Разметка шапки*/
 
-.site-navigation {
+.page-wrapper {
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0 27px;
+}
+
+.page-header {
+  position: relative;
+}
+
+.page-header .main-navigation {
+  display: flex;
+}
+
+.main-navigation .main-navigation-logo {
+  margin-top: 9px;
+  margin-right: 24px;
+}
+
+.page-header .site-navigation {
+  display: flex;
+
   list-style: none;
 }
 
 .site-navigation a {
+  display: block;
+  padding: 9px 14px;
+
   line-height: 18px;
   color: #ffffff;
   text-decoration-color: rgba(255,255,255,0.4);
+
+  border-radius: 20px;
 }
 
 .site-navigation a:hover {
@@ -170,6 +196,8 @@ img {
 }
 
 .catalog-navigation {
+  display: none;
+
   color: #323232;
 
   background-color: #f8f7f4;
@@ -194,17 +222,26 @@ img {
   background-color: #f6b5a5;
 }
 
-.user-block {
+.page-header .user-block {
+  display: flex;
+  justify-content: space-between;
+  width: 267px;
+  margin-left: auto;
+
   list-style: none;
 }
 
 .user-block-item .user-block-btn {
+  display: block;
+  padding: 9px 16px 9px 44px;
+
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
   color: #ffffff;
 
   background-color: rgba(255,255,255,0.2);
+  border-radius: 20px;
 }
 
 .user-block-item .user-block-btn:hover {
@@ -213,7 +250,17 @@ img {
   background-color: #f8f7f4;
 }
 
+.user-block-item .user-block-search {
+  width: 33px;
+  height: 33px;
+  padding: 0;
+
+  border-radius: 50%;
+}
+
 .user-block-item form {
+  display: none;
+
   background-color: #f8f7f4;
   border-radius: 5px;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
@@ -228,6 +275,8 @@ img {
   font-weight: 400;
   color: #999999;
 }
+
+
 
 .authorization-form-links .authorization-form-restore,
 .authorization-form-links .authorization-form-register {
@@ -261,6 +310,11 @@ img {
 
 .card p:last-of-type {
   color: #999;
+}
+
+.page-header .contact {
+  position: absolute;
+  right: 0;
 }
 
 .contact p {
@@ -330,8 +384,35 @@ img {
 }
 
 /*Разметка слайдера*/
+.slider {
+  position: relative;
+}
+
+.slider .slider-controls {
+  position: absolute;
+
+  width: 82px;
+}
+
+.slider-controls .slider-controller {
+  display: inline-block;
+
+  width: 20px;
+  height: 20px;
+
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+.slider-input {
+  display: none;
+}
 
 .slider-content {
+  margin: 0;
+  margin-top: 330px;
+  padding: 0;
+
   list-style: none;
 }
 
