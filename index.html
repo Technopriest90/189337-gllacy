@@ -241,21 +241,21 @@
       </main>
       <footer class="page-footer">
         <ul class="footer-social">
-          <li>
-            <a class="footer-social-btn  social-btn-twitter" href="#">Твиттер</a>
+          <li class="footer-social-item">
+            <a class="footer-social-btn  social-btn-twitter" href="#"><span class="visually-hidden">Твиттер</span></a>
           </li>
-          <li>
-            <a class="footer-social-btn  social-btn-inst" href="#">Инстаграм</a>
+          <li class="footer-social-item">
+            <a class="footer-social-btn  social-btn-inst" href="#"><span class="visually-hidden">Инстаграм</span></a>
           </li>
-          <li>
-            <a class="footer-social-btn  social-btn-fb" href="#">Фейсбук</a>
+          <li class="footer-social-item">
+            <a class="footer-social-btn  social-btn-fb" href="#"><span class="visually-hidden">Фейсбук</span></a>
           </li>
-          <li>
-            <a class="footer-social-btn  social-btn-vk" href="#">Вконтакте</a>
+          <li class="footer-social-item">
+            <a class="footer-social-btn  social-btn-vk" href="#"><span class="visually-hidden">Вконтакте</span></a>
           </li>
         </ul>
         <nav class="footer-menu">
-          <ul>
+          <ul class="footer-menu-list">
             <li class="footer-menu-item  menu-item-heart">
               <a href="#">Для поставщиков</a>
             </li>
@@ -278,26 +278,32 @@
     </div>
 
     <section class="modal-feedback">
-      <button class="modal-feedback-close" type="button" title="Закрыть">Закрыть</button>
-      <h2 class="modal-feedback-title">Мы обязательно вам ответим!</h2>
-      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="feedback-form__name  custom-input">
-          <input class="custom-input-field" type="text" name="name" required="">
-          <label class="custom-input-placeholder">Как Вас зовут?</label>
-        </fieldset>
-        <fieldset class="feedback-form-email  custom-input">
-          <input class="custom-input-field" type="email" name="email" required="">
-          <label class="custom-input-placeholder">Ваша почта для ответа?</label>
-        </fieldset>
-        <fieldset class="feedback-form-text  custom-input">
-          <textarea class="custom-input-field form-text-area" name="text" required=""></textarea>
-          <label class="custom-input-placeholder">Напишите что-нибудь... </label>
-        </fieldset>
-        <button class="btn feedback-form-submit" type="submit">Отправить</button>
+      <h2 class="visually-hidden">Обратная связь</h2>
+      <p class="modal-feedback-intro">Мы обязательно вам ответим!</p>
+      <button class="modal-feedback-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+      <form class="modal-feedback-form" action="https://echo.htmlacademy.ru" method="POST">
+        <label class="modal-feedback-label" for="feedback-name">
+          <span class="visually-hidden">Введите ваше имя:</span>
+          <input class="modal-feedback-field" type="text" id="feedback-name" name="feedback-name" required>
+          <span class="modal-feedback-placeholder">Как вас зовут?</span>
+        </label>
+        <label class="modal-feedback-label" for="feedback-email">
+          <span class="visually-hidden">Введите вашу электронную почту:</span>
+          <input class="modal-feedback-field" type="text" id="feedback-email" name="feedback-email" required>
+          <span class="modal-feedback-placeholder">Ваша почта для ответа?</span>
+        </label>
+        <label class="modal-feedback-label  modal-feedback-textarea" for="feedback-comment">
+          <span class="visually-hidden">Оставьте ваш вопрос:</span>
+          <textarea class="modal-feedback-field" id="feedback-comment" name="feedback-comment" required></textarea>
+          <span class="modal-feedback-placeholder">Напишите что-нибудь...</span>
+        </label>
+        <button class="modal-feedback-btn  btn" type="submit">Отправить</button>
       </form>
     </section>
 
     <div class="modal-overlay"></div>
+
+    <script src="js/script.js"></script>
 
 
   </body>
