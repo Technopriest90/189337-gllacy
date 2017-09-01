@@ -1,12 +1,12 @@
 var feedbackLink = document.querySelector(".contacts-btn");
 var feedback = document.querySelector(".modal-feedback");
 var feedbackClose = document.querySelector(".modal-feedback-close");
-var modalOverlay  = document.querySelector('.modal-overlay');
+var modalOverlay  = document.querySelector(".modal-overlay");
 
 feedbackLink.addEventListener("click", function(event) {
   event.preventDefault();
   feedback.classList.add("modal-feedback-show");
-  modalOverlay.classList.add('modal-overlay-show');
+  modalOverlay.classList.add("modal-overlay-show");
 });
 
 feedbackClose.addEventListener("click", function(event) {
@@ -15,10 +15,10 @@ feedbackClose.addEventListener("click", function(event) {
   modalOverlay.classList.remove("modal-overlay-show");
 });
 
-modalOverlay.addEventListener('click', function (event) {
+modalOverlay.addEventListener("click", function (event) {
   event.preventDefault();
-  modalOverlay.classList.remove('modal-overlay-show');
-  feedback.classList.remove('modal-feedback-show');
+  modalOverlay.classList.remove("modal-overlay-show");
+  feedback.classList.remove("modal-feedback-show");
 });
 
 window.addEventListener("keydown", function(event) {
