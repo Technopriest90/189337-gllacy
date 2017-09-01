@@ -512,7 +512,7 @@ img {
 
   visibility: hidden;
 
-  bckground-image: url("../img/icon-cart-hover.svg");
+  background-image: url("../img/icon-cart-hover.svg");
 }
 
 .user-cart-full .nav-user-link {
